@@ -1,0 +1,78 @@
+@use 'foundation' as *;
+
+.p-sub-artists-craftsmen {
+    padding-top: prem(80);
+    padding-bottom: prem(80);
+    @include mq(md) {
+        padding-top: prem(100);
+        padding-bottom: prem(150);
+    }
+}
+
+.p-sub-artists-craftsmen__inner {
+    width: 100%;
+}
+
+.p-sub-artists-craftsmen__cards {
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: prem(100);
+        display: flex;
+        justify-content:space-between;
+        flex-wrap: wrap;
+        gap:prem(30) 0;
+    }
+}
+
+.p-sub-artists-craftsmen__card {
+    @include mq(md) {
+        max-width: 32%;
+        width: 100%;
+    }
+}
+
+.p-sub-artists-craftsmen__card:nth-child(n+2) {
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-sub-artists-craftsmen__img {
+    img {
+        aspect-ratio: 335/224;
+        object-fit: cover;
+    }
+}
+
+.p-sub-artists-craftsmen__content {
+    margin-top: prem(30);
+}
+
+.p-sub-artists-craftsmen__name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h4 {
+        font-size: prem(25);
+        font-weight: $regular;
+    }
+    p {
+        color: #A8A8A8;
+        font-family: $font-family-accent;
+        font-size: prem(16);
+    }
+}
+
+.p-sub-artists-craftsmen__post {
+    font-size: prem(16);
+    margin-top: prem(30);
+    line-height: 1.8;
+}
+
+.p-sub-artists-craftsmen__text {
+    font-size: prem(16);
+    margin-top: prem(30);
+    line-height: 1.8;
+}
+

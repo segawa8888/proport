@@ -1,0 +1,102 @@
+@use 'foundation' as *;
+
+.p-sub-artists-award {
+    background-color: $color-black;
+    padding-top: prem(80);
+    padding-bottom: prem(80);
+    @include mq(md) {
+        padding-top: prem(100);
+        padding-bottom: prem(150);
+    }
+}
+
+.p-sub-artists-award__inner {
+    width: 100%;
+}
+
+.p-sub-artists-award__item:nth-child(n+2) {
+    margin-top: prem(100);
+}
+
+.p-sub-artists-award__top {
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        gap:0 prem(30);
+    }
+}
+
+.p-sub-artists-award__name {
+    font-size: prem(30);
+    color: $color-white;
+    font-weight: $regular;
+    @include mq(md) {
+        font-size: prem(50);
+    }
+}
+
+.p-sub-artists-award__post {
+    color: #A8A8A8;
+    font-size: prem(16);
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+.p-sub-artists-award__text {
+    color: $color-white;
+    font-size: prem(16);
+    margin-top: prem(30);
+    line-height: 1.8;
+}
+
+.p-sub-artists-award__img {
+    margin-top: prem(30);
+    img {
+        @include mq(md) {
+            aspect-ratio: 1400/700;
+            object-fit: cover;
+        }
+    }
+}
+
+.p-sub-artists-award__wrap {
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: prem(100);
+        display: flex;
+    }
+}
+
+.p-sub-artists-award__history {
+    font-size: prem(20);
+    color: $color-white;
+}
+
+.p-sub-artists-award__years {
+    padding-top: prem(30);
+    border-top: thin solid #fff;
+    @include mq(md) {
+        padding-top: initial;
+        margin-left: prem(100);
+        padding-left: prem(100);
+        border-top:none;
+        border-left: thin solid #fff ;
+    }
+}
+
+.p-sub-artists-award__year {
+    color: $color-white;
+    font-size: prem(16);
+    line-height: 1.8;
+    span {
+        font-family: $font-family-accent;
+        color: #A8A8A8;
+    }
+}
+
+.p-sub-artists-award__year:nth-child(n+2) {
+    margin-top: prem(20);
+}
+

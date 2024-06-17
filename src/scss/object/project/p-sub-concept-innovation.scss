@@ -1,0 +1,39 @@
+@use 'foundation' as *;
+
+.p-sub-concept-innovation {
+    margin-top: prem(80);
+    margin-bottom: prem(80);
+}
+
+.p-sub-concept-innovation__img {
+    margin-top: prem(30);
+    @include mq(md) {
+        max-width: prem(1000);
+        padding-left: prem(20);
+        padding-right: prem(20);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.p-sub-concept-innovation__heading {
+    font-size: prem(30);
+    line-height: 1.5;
+    font-weight: $medium;
+    text-align: center;
+    margin-top: prem(30);
+}
+
+.p-sub-concept-innovation__text {
+    font-size: prem(16);
+    line-height: 1.8;
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: prem(60);
+        max-width: prem(1000);
+        padding-left: prem(20);
+        padding-right: prem(20);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

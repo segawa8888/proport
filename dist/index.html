@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>DemoSite - Concept</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' integrity='sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="./css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js' integrity='sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="./js/script.js"></script>
+</head>
+<body>
+
+  <header class="p-header l-header js-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="#">
+          <img src="./images/common/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="./concept/">Concept</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="./artists/">Artists</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="./wallart">WallArt</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="./showroom/">Showroom</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="./products/">Products</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="./contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__drawer js-drawer">
+        <nav class="p-header__drawer-nav">
+          <ul class="p-header__drawer-items">
+            <li class="p-header__drawer-item">
+              <a href="./concept/">Concept</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./artists/">Artists</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./wallart/">WallArt</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./showroom/">Showroom</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./products/">Products</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./news/">News</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="./contact/">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="p-mv">
+      <div class="p-mv__inner">
+        <div class="p-mv__title-wrap js-mv">
+          <h2 class="p-mv__main-title js-fade">その壁から、<br class="u-mobile">世界を変えよう。</h2>
+          <p class="p-mv__sub-title js-fade">ウォールアートで世界を変える。<br class="u-mobile">Web Designのウォールアート。</p>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <div class="p-mv__swiper swiper js-mv-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv01.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv02.jpg" alt="省略">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="swiper-img">
+                <img src="./images/top/top_mv03.jpg" alt="省略">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-news">
+      <div class="p-news__wrapper">
+        <div class="p-news__inner l-inner">
+          <div class="p-news__contents">
+            <div class="p-news__items">
+              <div class="p-news__item">
+                <p class="p-news-item__heading">News</p>
+                <a href="">
+                  <div class="p-news-item__wrap">
+                    <p class="p-news-item__date">2023年7月31日</p>
+                    <p class="p-news-item__title">WEBサイトを公開しました。</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-concept">
+      <div class="p-concept__wrapper">
+        <div class="p-concept__inner l-inner">
+          <div class="p-concept__items">
+            <div class="p-concept__item">
+              <div class="p-concept__img js-fade">
+                <img src='./images/top/top_concept01.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+              <h2 class="c-title p-concept__title -white u-text-right">Concept</h2>
+            </div>
+            <div class="p-concept__item">
+              <div class="p-concept__img js-fade">
+                <img src='./images/top/top_concept02.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+            </div>
+          </div>
+          <div class="p-concept__details">
+            <div class="p-concept__detail u-desktop">
+              <div class="p-concept-detail__img js-fade">
+                <img src='./images/top/top_concept03.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+            </div>
+            <div class="p-concept__detail">
+              <p class="p-concept-detail__text">
+                Web Designは、ウォールアートで壁を変え、世界を変えていく。<br>
+                  オフィスの壁を、ホテルの壁を、レストランの壁を、<br>コンセプトショップの壁を。<br>
+                  その壁にGAF CREATEの作品を飾ってみよう。<br>
+                  たちまち環境が変わり、対話が生まれ、場が活性化していく。<br>
+                  目の前の世界が、大きく動き出す。
+              </p>
+              <a href="" class="c-btn -purple p-concept-detail__btn">More Detail</a>
+              <div class="p-concept-detail__img u-mobile js-fade">
+                <img src='./images/top/top_concept03.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-wallart">
+      <div class="p-wallart__wrapper">
+        <div class="p-wallart__inner l-inner">
+          <div class="p-wallart__contents">
+            <div class="p-wallart__content">
+              <h2 class="c-title p-wallart__title -black u-text-left">Wall Art</h2>
+              <div class="p-wallart__items">
+                <div class="p-wallart__item">
+                  <div class="p-wallart__img js-fade">
+                    <img src='./images/top/top_wallart01.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-wallart__wrap">
+                    <h3 class="p-wallart__heading">完全フルオーダー<br>ウォールアート</h3>
+                    <div class="p-wallart__step">
+                      <img src='./images/top/top_wallart02.png' alt='' width='' height='' loading='lazy'>
+                    </div>
+                    <p class="p-wallart__text">フルオーダー作品は、まず物語を紡ぐことから始まります。会社や建物、施設、人…その歴史や想い、記憶に残したい出来事や未来像など、たっぷりお話をお聴きします。私たちは、そのお話をもとにシンボリックストーリーを創作し、絵画を描き起こします。次に、匠の技と感性を持った伝統工芸士たちのコラボレーションにより、最高の表現で絵画を立体化していきます。出来上がるのは、世界にたった一つ、あなただけのウォールアート作品。壁に飾られた時から、更なる物語が動き出します。</p>
+                    <a href="" class="c-btn -blue p-wallart__btn">More Detail</a>
+                  </div>
+                </div>
+                <div class="p-wallart__item">
+                  <div class="p-wallart__img js-fade">
+                    <img src='./images/top/top_wallart03.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-wallart__wrap">
+                    <h3 class="p-wallart__heading">サブスクリプション<br>ウォールアート</h3>
+                    <p class="p-wallart__text">迸るアート性、バリエーション豊かなコレクション。サブスクリプションウォールアートは、GAF CREATEの世界観をお手軽に体験していただけるサービスです。プリント、ペインティング、伝統工芸（技法数も指定できます）などから表現方法をチョイスすることによって、カジュアルにアート体験ができます。さあ、ぞくぞくするような作品との出会いをどうぞ！</p>
+                    <a href="" class="c-btn -blue p-wallart__btn">Go To Website</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-products">
+      <div class="p-products__wrapper">
+        <div class="p-products__inner l-inner">
+          <h2 class="c-title -white p-products__title">Products</h2>
+          <p class="p-products__text">物語と原画はウォールアートを形作る合わせ鏡。そこへ伝統工芸が加わって、グラマラスな作品に仕上がっていきます。物語に迸るイマジネーション、美術家によるデザインコンセプトなど、Web Designのものづくりの価値観に触れてください。</p>
+          <div class="p-products__items">
+            <div class="p-products__item">
+              <a href="">
+              <div class="p-products__img js-fade">
+                <img src='./images/top/top_products01.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+              <p class="p-products__heading">TEST01</p>
+            </a>
+            </div>
+            <div class="p-products__item">
+              <a href="">
+              <div class="p-products__img js-fade">
+                <img src='./images/top/top_products02.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+              <p class="p-products__heading">TEST02<br><span>テスト02</span></p>
+            </a>
+            </div>
+            <div class="p-products__item">
+              <a href="">
+              <div class="p-products__img js-fade">
+                <img src='./images/top/top_products03.jpg' alt='' width='' height='' loading='lazy'>
+              </div>
+              <p class="p-products__heading">TEST03<br><span>テスト03</span></p>
+            </a>
+            </div>
+          </div>
+          <div class="p-product__btn">
+            <a href="" class="c-btn -purple">View All</a>
+          </div>
+          <p class="p-products-ar__title">AR</p>
+          <p class="p-products-ar__text">スマートフォンをかざすだけで、壁にアートが出現。<br class="u-desktop">さあ、ARで楽しもう！</p>
+          <a href="" class="p-products-ar__btn">Let's Try</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-artists">
+      <div class="p-artists__wrapper">
+        <div class="p-artists__inner l-inner">
+          <div class="p-artists__content">
+            <div class="p-artists__items">
+              <div class="p-artists__item">
+                <h2 class="c-title p-artists__title -black">Artists</h2>
+                <p class="p-artists__text">総監督の沖口博、美術家の大黒千晶を筆頭に、多分野の伝統工芸士が集まって仕事をしています。壁から世界を変え、日本の伝統工芸の可能性をひろげる作品作りを使命とし、海外での評価が上がってきています。</p>
+                <a href="" class="c-btn p-artists__btn -blue">View Artists</a>
+              </div>
+              <div class="p-artists__item">
+                <div class="p-artists__imgs">
+                  <div class="p-artists__img js-fade">
+                    <img src='./images/top/top_artists01.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-artists__img js-fade">
+                    <img src='./images/top/top_artists02.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-artists__img js-fade">
+                    <img src='./images/top/top_artists03.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-artists__img js-fade">
+                    <img src='./images/top/top_artists04.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                </div>
+                <a href="" class="c-btn p-artists__btn -blue">Watch the Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="p-showroom">
+      <div class="p-showroom__wrapper">
+        <div class="p-showroom__inner l-inner">
+          <div class="p-showroom__floating" id="p-showroom__floating">
+            <div class="p-showroom-fix-box">
+                <div class="p-showroom-flowing-box">
+                    <h3>Showroom　　Showroom　　Showroom</h3>
+                </div>
+            </div>
+        </div>
+        <div class="p-showroom__img js-fade">
+          <img src='./images/top/top_artists05.jpg' alt='' width='' height='' loading='lazy'>
+        </div>
+        <div class="p-showroom-info__content">
+          <div class="p-showroom-info__items">
+            <div class="p-showroom-info__item">
+              <p class="p-showroom-info__caption">Address</p>
+              <p class="p-showroom-info__title">
+                〒123-4567<br>東京都〇〇区〇〇-〇〇
+              </p>
+            </div>
+            <div class="p-showroom-info__item">
+              <p class="p-showroom-info__caption">Access</p>
+              <p class="p-showroom-info__title">
+                JR〇〇駅からバスで10分<br>高速道路ICから車で10分
+              </p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="p-top-news">
+      <div class="p-top-news__wrapper">
+        <div class="p-top-news__inner l-inner">
+          <div class="p-top-news__items">
+            <div class="p-top-news__item">
+              <h2 class="c-title p-top-news__title -white">News</h2>
+            </div>
+            <div class="p-top-news__item">
+              <a href="">
+                <span class="p-top-news__category">お知らせ</span>
+                <p class="p-top-news__heading">WEbサイトを公開しました。</p>
+              </a>
+              <a href="" class="c-btn -purple p-top-news__btn">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-contact js-fade">
+      <a href="">
+        <div class="p-contact__wrapper">
+          <h2 class="c-title p-contact__title">Contact</h2>
+          <p class="p-contact__text">あなたの軌跡は溢れる物語。<br class="u-mobile">その壁に、あなたの物語を。<br>アートが世界を変えていく。</p>
+        </div>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__wrap">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">
+            <a href="#">
+              <img src="./images/common/logo.png" alt="">
+            </a>
+          </div>
+          <address class="p-footer__address">
+            〒123-4567<br>
+            東京都〇〇区〇〇-〇〇<br>
+            TEL:052-123-4567
+          </address>
+          <a class="p-footer__policy" href="#">privacy policy</a>
+        </div>
+        <div class="p-footer__right">
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-items">
+              <li class="p-footer__nav-item">
+                <a href="./concept/">Concept</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./artists/">Artists</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./wallart">WallArt</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./showroom">showroom</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./products">Products</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./news/">News</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="./contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-footer__sns">
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="./images/common/instagram.svg" alt="省略">
+            </a>
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="./images/common/x.svg" alt="省略">
+            </a>
+          </div>
+        </div>
+      </div>
+      <small class="p-footer__copyright">&copy;2024 <span>webDesign</span> Co.,Ltd</small>
+    </div>
+  </footer>
+
+
+</body>
+</html>

@@ -1,0 +1,88 @@
+@use 'foundation' as *;
+
+.p-wallart {
+    padding-top: prem(50);
+}
+
+.p-wallart__wrapper {
+    @include mq(md) {
+        overflow: hidden;
+    }
+}
+
+.p-wallart__title {
+    @include mq(md) {
+        padding-left: prem(40);
+    }
+}
+
+.p-wallart__items {
+    margin-top: prem(30);
+}
+
+.p-wallart__item {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-wallart__item:nth-child(even) {
+    margin-top: prem(80);
+    @include mq(md) {
+        margin-top: prem(100);
+        flex-direction: row-reverse;
+    }
+    .p-wallart__img {
+        @include mq(md) {
+            margin-right: calc(45% - 50vw);
+            width: 50vw;
+        }
+    }
+}
+
+.p-wallart__img {
+    @include mq(md) {
+        margin-left: calc(45% - 50vw);
+        width: 50vw;
+    }
+}
+
+.p-wallart__wrap {
+    margin-top: prem(40);
+    @include mq(md) {
+        max-width: 45%;
+        width: 100%;
+        margin-top: prem(10);
+    }
+}
+
+.p-wallart__heading {
+    font-size: prem(30);
+    line-height: calc(45/30);
+    font-weight: $regular;
+    @include mq(md) {
+        font-size: prem(50);
+        line-height: calc(75/50);
+    }
+}
+
+.p-wallart__step {
+    margin-top: prem(40);
+}
+
+.p-wallart__text {
+    font-size: prem(16);
+    line-height:1.8;
+    margin-top: prem(30);
+    @include mq(md) {
+        font-size: 16px;
+    }
+}
+
+.p-wallart__btn {
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: prem(45);
+    }
+}

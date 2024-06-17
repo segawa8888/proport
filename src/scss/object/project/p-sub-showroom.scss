@@ -1,0 +1,23 @@
+@use 'foundation' as *;
+
+.p-sub-showroom {
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: prem(100);
+    }
+}
+
+.p-sub-showroom__inner {
+    width: 100%;
+}
+
+.p-sub-showroom__img {
+    margin-top: prem(50);
+}
+
+.p-sub-showroom__btn {
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-right: prem(30);
+    }
+}

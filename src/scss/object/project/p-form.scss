@@ -1,0 +1,146 @@
+@use 'foundation' as *;
+
+.p-form__wrap + .p-form__wrap {
+    margin-top: prem(50);
+}
+
+.p-form__label {
+    font-size: prem(16);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.08em;
+    @include mq(md){
+        max-width: prem(200);
+        width: 100%;
+    }
+}
+
+.p-form__wrap.p-form__wrap--textarea .p-form__label {
+    @include mq(md){
+        margin-top: prem(10);
+    }
+}
+
+.p-form__label span {
+    padding-left: prem(5);
+    display: inline-block;
+    font-size: prem(16);
+    color: #D00000;
+}
+
+.p-form__input,
+.p-form__select,
+.p-form__radio,
+.p-form__checkbox,
+.p-form__textarea {
+    margin-top: prem(30);
+}
+
+.p-form__input,
+.p-form__textarea {
+    flex-grow: 1;
+}
+
+.p-form__submit {
+    margin-top: prem(60);
+    text-align: center;
+}
+
+.p-form-privacy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.p-form__privacy {
+    font-size: prem(12);
+    text-decoration: underline;
+}
+
+.p-Form-CheckItem {
+    margin-top: 24px;
+  }
+  @media screen and (max-width: 480px) {
+    .p-Form-CheckItem {
+      margin-top: 18px;
+    }
+  }
+  .p-Form-CheckItem-Label {
+    margin-top: 20px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  .p-Form-CheckItem-Label-Input {
+    display: none;
+  }
+  .p-Form-CheckItem-Label-SquareIcon {
+    border: 1px solid $color-black;
+    display: block;
+    flex: none;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+  }
+  @media screen and (max-width: 480px) {
+    .p-Form-CheckItem-Label-SquareIcon {
+      width: prem(20);
+      height: prem(20);
+    }
+  }
+  .p-Form-CheckItem-Label-Text {
+    padding-left: 8px;
+    font-size: 16px;
+  }
+  @media screen and (max-width: 480px) {
+    .p-Form-CheckItem-Label-Text {
+      padding-left: 6px;
+      font-size: 3.6vw;
+    }
+  }
+  .Form-Btn {
+    opacity: 0.2;
+    pointer-events: none;
+  }
+  @media screen and (max-width: 480px) {
+    .Form-Btn {
+      padding-bottom: 8px;
+      width: 100%;
+      font-size: 16px;
+    }
+  }
+  .Form-Btn.isActive {
+    opacity: 1;
+    pointer-events: inherit;
+  }
+  .p-Form-CheckItem-Label-Input:checked + *:before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 2px;
+    background: #121212;
+    transform-origin: bottom left;
+    transform: rotateZ(90deg);
+  }
+  .p-Form-CheckItem-Label-Input:checked + *:after {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 2px;
+    background: #121212;
+    transform-origin: bottom left;
+    transform: rotateZ(0deg);
+  }
+  .p-Form-CheckItem-Label-Input:checked + * {
+    width: 0;
+    height: 0;
+    transform: translate(8px, 8px) rotateZ(-135deg) scale(1.5);
+  }
+  @media screen and (max-width: 480px) {
+    .p-Form-CheckItem-Label-Input:checked + * {
+      transform: translate(5px, 7px) rotateZ(-135deg) scale(1.5);
+    }
+  }

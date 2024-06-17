@@ -1,0 +1,67 @@
+@use 'foundation' as *;
+
+.p-artists {
+    padding-top: prem(80);
+}
+
+.p-artists__text {
+    font-size: prem(16);
+    margin-top: prem(50);
+    line-height: 1.8;
+}
+
+.p-artists__btn {
+    margin-top:prem(50);
+    @include mq(md) {
+        margin-top: prem(80);
+    }
+}
+
+.p-artists__items {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+}
+
+.p-artists__item {
+    @include mq(md) {
+        max-width: 45%;
+    }
+}
+
+.p-artists__item:nth-child(n+2) {
+    margin-top: prem(60);
+}
+
+.p-artists__img {
+    &:nth-child(n+2) {
+        margin-top: prem(30);
+    }
+}
+
+.p-artists__img:nth-child(1) {
+    @include mq(md) {
+        position: absolute;
+        bottom: 5%;
+        left: 0;
+        max-width: 45%;
+    }
+}
+
+.p-artists__img:nth-child(3) {
+    @include mq(md) {
+        max-width: 45%;
+        margin-top: prem(70);
+    }
+}
+
+.p-artists__img:nth-child(4) {
+    @include mq(md) {
+        position: absolute;
+        bottom: -20%;
+        left: 20%;
+        max-width: 25%;
+    }
+}

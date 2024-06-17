@@ -1,0 +1,34 @@
+@use 'foundation' as *;
+
+.p-products-swiper__main .swiper-slide img,
+.p-products-swiper__thumbnail .swiper-slide img {
+    width: 100%;
+    aspect-ratio: 350/180;
+    object-fit: cover;
+}
+
+.p-products-swiper__thumbnail {
+    margin-top: prem(20);
+    @include mq(md){
+        margin-top: prem(40);
+    }
+}
+
+.p-products-swiper__thumbnail .swiper-slide {
+    cursor: pointer;
+}
+
+.p-products-swiper__thumbnail .swiper-slide::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba($color: #fff, $alpha: .6);
+    transition: .3s;
+}
+
+.p-products-swiper__thumbnail .swiper-slide.swiper-slide-thumb-active::before {
+    background-color: initial;
+}

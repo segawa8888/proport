@@ -1,0 +1,122 @@
+@use 'foundation' as *;
+
+.p-products {
+    padding-top: prem(60);
+    background-color: $color-black;
+    padding-bottom: prem(100);
+    margin-top: prem(80);
+}
+
+.p-products__inner {
+    position: relative;
+}
+
+.p-products__text {
+    font-size: 16px;
+    font-weight: $regular;
+    letter-spacing: .6px;
+    line-height: 1.8;
+    color: $color-white;
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: prem(100);
+    }
+}
+
+.p-products__items {
+    @include mq(md) {
+        display: flex;
+        gap:prem(40);
+        margin-top: prem(150);
+    }
+}
+
+.p-products__item {
+    margin-top: prem(100);
+    @include mq(md) {
+        margin-top: initial;
+    }
+    &:nth-child(n+2) {
+        margin-top: prem(50);
+        @include mq(md) {
+            margin-top: initial;
+        }
+    }
+}
+
+.p-products__img img {
+    @include mq(md) {
+        aspect-ratio: 395/295;
+    }
+}
+
+.p-products__heading {
+    font-size: prem(40);
+    line-height: 1em;
+    color: $color-white;
+    margin-top: prem(20);
+    @include mq(md) {
+        font-size: prem(55);
+        line-height: 0.5em;
+        margin-top: prem(30);
+    }
+    span {
+        font-size: 16px;
+    }
+}
+
+.p-product__btn {
+    margin-top: prem(60);
+    @include mq(md) {
+        position: absolute;
+        top: prem(150);
+        right: 0;
+    }
+}
+
+.p-products-ar__title {
+    font-size: prem(50);
+    color: $color-white;
+    text-align: center;
+    margin-top: prem(50);
+    font-family: $font-family-accent;
+    font-style: italic;
+    @include mq(md) {
+        margin-top: prem(100);
+    }
+}
+
+.p-products-ar__text {
+    font-size: prem(16);
+    line-height: 1.8;
+    color: $color-white;
+    margin-top: prem(50);
+    @include mq(md) {
+        text-align: center;
+    }
+}
+
+.p-products-ar__btn {
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: prem(80);
+    z-index: 1;
+    color: #fff;
+    font-size:prem(16);
+    letter-spacing: .6px;
+    &::after {
+        content: '';
+        position: absolute;
+        top: -37px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        background: linear-gradient(135deg, rgba(16,16,16,1) 0%, rgba(92,43,92,1) 35%, rgba(32,95,195,1) 100%);
+        filter: blur(10px);
+        transition: 1s;
+        z-index: -1;
+    }
+}

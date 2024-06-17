@@ -1,0 +1,66 @@
+@use 'foundation' as *;
+
+.p-form-radio label {
+    display: block;
+    @include mq(md){
+        display: inline-block;
+    }
+}
+
+.p-form-radio label:not(:first-of-type) {
+    margin-top: prem(15);
+    @include mq(md){
+        margin-top: 0;
+        margin-left: prem(30);
+    }
+}
+
+.p-form-radio input {
+    display: none;
+}
+
+.p-form-radio input + span {
+    padding: 0 0 0 prem(25);
+    position: relative;
+    display: block;
+    font-size: prem(15);
+    line-height: 1;
+    cursor: pointer;
+    @include mq(md){
+        display: inline-block;
+    }
+}
+
+.p-form-radio input + span::before {
+    content: "";
+    width: prem(15);
+    height: prem(15);
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+}
+
+.p-form-radio input + span::after {
+    content: "";
+    padding: prem(2);
+    width: prem(7);
+    height: prem(7);
+    position: absolute;
+    top: 50%;
+    left: prem(4);
+    transform: translateY(-50%);
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: #000;
+    opacity: 0;
+    transition: .3s;
+}
+
+.p-form-radio input:checked + span::after {
+    opacity: 1;
+}

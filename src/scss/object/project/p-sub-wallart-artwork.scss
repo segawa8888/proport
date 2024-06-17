@@ -1,0 +1,11 @@
+@use 'foundation' as *;
+
+.p-sub-wallart-artwork {
+    padding-top: prem(80);
+    padding-bottom: prem(80);
+    background-color: $color-black;
+}
+
+.p-sub-wallart-artwork__inner {
+    width: 100%;
+}

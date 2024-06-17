@@ -1,0 +1,116 @@
+@use 'foundation' as *;
+
+.p-mv {
+    position: relative;
+    z-index: 1;
+    min-height: prem(500);
+    background-color: $color-black;
+}
+
+.p-mv__inner {
+    height: inherit;
+    min-height: inherit;
+}
+
+.p-mv__title-wrap {
+    font-family: $font-family-mincho;
+    padding-top: prem(100);
+    padding-left: prem(20);
+    z-index: 2;
+    width: 100%;
+    color: #fff;
+    @include mq(md) {
+        padding-top: prem(250);
+    }
+}
+
+.p-mv__main-title {
+    font-size: prem(42);
+    @include mq(md){
+        font-size: prem(70);
+    }
+}
+
+.p-mv__sub-title {
+    margin-top: prem(20);
+    font-size: prem(18);
+    margin-top: prem(20);
+    @include mq(md) {
+        margin-top: prem(60);
+    }
+}
+
+.p-mv__swiper {
+    margin-top: prem(20);
+    margin-right: prem(20);
+    @include mq(md) {
+        margin-left: prem(20);
+    }
+}
+
+.p-mv__swiper,
+.p-mv__swiper .swiper-img,
+.p-mv__swiper .swiper-img img {
+    max-height: prem(450);
+    height: 100%;
+    @include mq(md) {
+        max-height:prem(700);
+    }
+}
+
+.p-mv__swiper .swiper-img img {
+    width: 100%;
+    object-fit: cover;
+}
+
+// Swiper カスタム
+
+.swiper-button-prev,
+.swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    text-align: right;
+    position: static;
+    padding:0 prem(20);
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: initial;
+    }
+}
+
+/* 直線長方形のプログレスバー */
+.swiper-pagination-bullet {
+  position: relative;
+  width: prem(30);
+  height: prem(3);
+  border-radius:prem(5);
+  background-color: rgba(204,204,204,.5);
+  opacity: 1;
+  @include mq(md) {
+    width:prem(80);
+  }
+}
+.swiper-pagination-bullet::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: #ccc;
+  border-radius:prem(5);
+}
+
+.swiper-pagination-bullet-active::before {
+  animation: paginationActive 5s linear forwards;
+}
+
+@keyframes paginationActive {
+  100% {
+    width: 100%;
+    opacity: 1;
+  }
+}

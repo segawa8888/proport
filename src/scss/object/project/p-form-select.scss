@@ -1,0 +1,26 @@
+@use 'foundation' as *;
+
+.p-form-select select {
+    padding: prem(11.5) prem(50) prem(11.5) prem(15);
+    width: 100%;
+    font-size: prem(15);
+    line-height: 1;
+    border-radius: 0;
+    border: 1px solid #ccc;
+    background-image: url(/images/common/arrow.svg);
+    background-repeat: no-repeat;
+    background-size: prem(15);
+    background-position: right prem(15) top prem(15);
+    appearance: none;
+    cursor: pointer;
+}
+
+.p-form-select select::-ms-expand {
+    display: none;
+}
+
+.p-form-select select:focus {
+    border: 1px solid #ccc;
+    box-shadow: none;
+		outline: none;
+}

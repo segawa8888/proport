@@ -1,0 +1,214 @@
+@use 'foundation' as *;
+
+.p-sub-wallart-artwork-flow-lists {
+    border: prem(1) solid $color-white;
+    padding:prem(30);
+    margin-top: prem(50);
+    @include mq(md) {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: prem(100);
+        padding:prem(40);
+    }
+}
+
+.p-sub-wallart-artwork-flow-list {
+    @include mq(md) {
+        max-width: 45%;
+        width: 100%;
+    }
+}
+
+.p-sub-wallart-artwork-flow-list:nth-child(2) {
+    position: relative;
+    &::before {
+        content: '＋';
+        color: $color-white;
+        font-size: prem(40);
+        text-align: center;
+        display: block;
+        margin:prem(40) 0;
+        @include mq(md) {
+            position: absolute;
+            top: 50%;
+            left: -14%;
+            display: inline-block;
+            margin: 0;
+        }
+    }
+
+    .p-sub-wallart-artwork-flow-list__box {
+        p {
+            @include mq(md) {
+                width: 24.5%;
+            }
+        }
+    }
+}
+
+.p-sub-wallart-artwork-flow-list__title {
+    font-family: $font-family-accent;
+    font-style: italic;
+    color: #fff;
+    font-size: prem(20);
+    text-align: center;
+    @include mq(md) {
+        font-size: prem(24);
+    }
+}
+
+.p-sub-wallart-artwork-flow-list__box {
+    margin-top: prem(20);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap:prem(5) 0;
+    p {
+        color: #fff;
+        font-size: prem(16);
+        background: rgba(51,51,51,1);
+        height:prem(50);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 49%;
+        @include mq(md) {
+            text-align: center;
+            width: 33%;
+            height:prem(100);
+        }
+    }
+    .first {
+        width: 100%;
+        @include mq(md) {
+            width: 33%;
+        }
+    }
+}
+
+.p-sub-wallart-artwork-flow__title {
+    font-family: $font-family-accent;
+    font-style: italic;
+    max-width: fit-content;
+    border: solid thin #fff;
+    color: #fff;
+    font-size: prem(16);
+    padding: prem(10) prem(30);
+    position: relative;
+    margin:prem(100) auto;
+    @include mq(md) {
+        margin:prem(200) auto prem(100) auto;
+    }
+    &::before {
+        content: '';
+        height:prem(100);
+        background-color: $color-white;
+        width:prem(1);
+        position: absolute;
+        top: prem(-100);
+        left: 50%;
+        transform: translateX(-50%);
+        @include mq(md) {
+            height:prem(200);
+            top:prem(-200);
+        }
+    }
+
+    &::after {
+        content: '';
+        height:prem(100);
+        background-color: $color-white;
+        width:prem(1);
+        position: absolute;
+        bottom: prem(-100);
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.p-sub-wallart-artwork-flow-content-item {
+    @include mq(md) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.p-sub-wallart-artwork-flow-content:nth-child(even) {
+    .p-sub-wallart-artwork-flow-content-item {
+        @include mq(md) {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+    }
+}
+
+.p-sub-wallart-artwork-flow-content-item__img {
+    @include mq(md) {
+        max-width: 55%;
+        width: 100%;
+    }
+
+    img {
+        aspect-ratio: 335/224;
+        object-fit: cover;
+    }
+}
+
+.p-sub-wallart-artwork-flow-content-item__wrap {
+    margin-top: prem(30);
+    @include mq(md) {
+        margin-top: initial;
+        max-width: 40%;
+        width: 100%;
+    }
+    h4 {
+        font-size: prem(24);
+        color: $color-white;
+        font-weight: $regular;
+        @include mq(md) {
+            font-size: prem(35);
+        }
+    }
+    p {
+        font-size: prem(16);
+        line-height: 1.8;
+        color: $color-white;
+        margin-top: prem(30);
+    }
+}
+
+.p-sub-wallart-artwork-flow-content__icon {
+    margin-top: prem(30);
+    @include mq(md) {
+        max-width: prem(300);
+        margin-left: auto;
+    }
+}
+
+.p-sub-wallart-artwork-flow-under {
+    margin-top: prem(80);
+    @include mq(md) {
+        margin-top: prem(200);
+    }
+}
+
+.p-sub-wallart-artwork-flow-under__title {
+    font-size: prem(45);
+    line-height: 1;
+    font-family: $font-family-accent;
+    color: #fff;
+    text-align: center;
+    font-weight: $regular;
+    font-style: italic;
+    @include mq(md) {
+        font-size: prem(72);
+    }
+}
+
+.p-sub-wallart-artwork-flow-under__img {
+    margin-top: prem(50);
+    @include mq(md) {
+        margin-top: prem(80);
+    }
+}

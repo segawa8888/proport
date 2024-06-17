@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>DemoSite - News</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' integrity='sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js' integrity='sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+  <header class="p-header l-header js-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="../index.html">
+          <img src="../images/common/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="../concept/">Concept</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../artists/">Artists</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../wallart/">WallArt</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../showroom/">Showroom</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../products/">Products</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__drawer js-drawer">
+        <nav class="p-header__drawer-nav">
+          <ul class="p-header__drawer-items">
+            <li class="p-header__drawer-item">
+              <a href="./concept/">Concept</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../artists/">Artists</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../wallart/">WallArt</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../showroom/">Showroom</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../products/">Products</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../news/">News</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../contact/">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="c-sub-title -blue">
+      <div class="l-inner">
+        <h2 class="c-title -white">News</h2>
+        <ul class="c-breadcrumb p-breadcrumb">
+          <li><a href="/">Top</a></li>
+          <li>News</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-sub-news">
+      <div class="p-sub-news__wrapper">
+        <div class="p-sub-news__inner l-inner">
+          <div class="p-sub-news__items">
+            <div class="p-sub-news__item">
+              <a href="">
+                <datetime class="p-sub-news__date">2024.01.01</datetime>
+                <span class="p-sub-news__category">お知らせ</span>
+                <p class="p-sub-news__heading">WEbサイトを公開しました。</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="p-contact js-fade">
+      <a href="">
+        <div class="p-contact__wrapper">
+          <h2 class="c-title p-contact__title">Contact</h2>
+          <p class="p-contact__text">あなたの軌跡は溢れる物語。<br class="u-mobile">その壁に、あなたの物語を。<br>アートが世界を変えていく。</p>
+        </div>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__wrap">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">
+            <a href="../index.html">
+              <img src="../images/common/logo.png" alt="">
+            </a>
+          </div>
+          <address class="p-footer__address">
+            〒123-4567<br>
+            東京都〇〇区〇〇-〇〇<br>
+            TEL:052-123-4567
+          </address>
+          <a class="p-footer__policy" href="#">privacy policy</a>
+        </div>
+        <div class="p-footer__right">
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-items">
+              <li class="p-footer__nav-item">
+                <a href="../concept/">Concept</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../artists/">Artists</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../wallart/">WallArt</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../showroom/">showroom</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../products/">Products</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../news/">News</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-footer__sns">
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="../images/common/instagram.svg" alt="省略">
+            </a>
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="../images/common/x.svg" alt="省略">
+            </a>
+          </div>
+        </div>
+      </div>
+      <small class="p-footer__copyright">&copy;2024 <span>webDesign</span> Co.,Ltd</small>
+    </div>
+  </footer>
+
+
+</body>
+</html>

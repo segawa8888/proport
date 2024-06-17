@@ -1,0 +1,36 @@
+@use 'foundation' as *;
+
+.c-btn {
+  position: relative;
+  font-size:prem(16);
+  letter-spacing: .6px;
+  line-height: 2.5em;
+  text-align: right;
+  display: block;
+  padding-right: prem(30);
+  z-index: 2;
+  &::after {
+    content: "";
+    position: absolute;
+    top:prem(-18);
+    right: prem(10);
+    border-radius: 50%;
+    width: prem(60);
+    height: prem(60);
+    filter: blur(10px);
+    transition: 1s;
+    z-index: -1;
+  }
+  &.-purple {
+    color: $color-white;
+    &:after {
+      background: linear-gradient(135deg, rgba(16,16,16,1) 0%, rgba(92,43,92,1) 35%, rgba(32,95,195,1) 100%);
+    }
+  }
+  &.-blue {
+    color: $color-black;
+    &:after {
+      background: linear-gradient(135deg, #FFFAF0 0%, #EDE0B2 35%, #007CB4 100%);
+    }
+  }
+}

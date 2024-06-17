@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- 電話番号の自動検出と変換を無効にする -->
+  <meta name="format-detection" content="telephone=no" />
+
+  <title>DemoSite - WallArt</title>
+  <meta name="description" content="トップページの説明" />
+  <meta name="keywords" content="キーワード" />
+
+  <!-- ogp -->
+  <meta property="og:title" content="サイト名" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="サイトのドメイン" />
+  <meta property="og:image" content="OGP IMAGE" />
+  <meta property="og:site_name" content="サイトのドメイン" />
+  <meta property="og:description" content="トップページの説明" />
+  <!-- ファビコン -->
+  <link rel="”icon”" href="">
+  <link rel="apple-touch-icon" href="">
+  <!-- CSS -->
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.css' integrity='sha512-rd0qOHVMOcez6pLWPVFIv7EfSdGKLt+eafXh4RO/12Fgr41hDQxfGvoi1Vy55QIVcQEujUE1LQrATCLl2Fs+ag==' crossorigin='anonymous'/>
+  <link rel="stylesheet" href="../css/style.css">
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arapey:ital@0;1&family=Noto+Sans+JP:wght@100..900&family=Zen+Old+Mincho&display=swap" rel="stylesheet">
+  <!-- JavaScript -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js' integrity='sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js' integrity='sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==' crossorigin='anonymous'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/11.0.5/swiper-bundle.min.js' integrity='sha512-Ysw1DcK1P+uYLqprEAzNQJP+J4hTx4t/3X2nbVwszao8wD+9afLjBQYjz7Uk4ADP+Er++mJoScI42ueGtQOzEA==' crossorigin='anonymous'></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script src="../js/script.js"></script>
+</head>
+<body>
+
+  <header class="p-header l-header js-header">
+    <div class="p-header__inner">
+      <h1 class="p-header__logo">
+        <a href="../index.html">
+          <img src="../images/common/logo.png" alt="LOGO">
+        </a>
+      </h1>
+      <nav class="p-header__nav">
+        <ul class="p-header__nav-items">
+          <li class="p-header__nav-item">
+            <a href="../concept/">Concept</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../artists/">Artists</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../wallart/">WallArt</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../showroom/">Showroom</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../products/">Products</a>
+          </li>
+          <li class="p-header__nav-item">
+            <a href="../contact/">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="p-header__hamburger js-hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <div class="p-header__drawer js-drawer">
+        <nav class="p-header__drawer-nav">
+          <ul class="p-header__drawer-items">
+            <li class="p-header__drawer-item">
+              <a href="./concept/">Concept</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../artists/">Artists</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../wallart/">WallArt</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../showroom/">Showroom</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../products/">Products</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../news/">News</a>
+            </li>
+            <li class="p-header__drawer-item">
+              <a href="../contact/">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="c-sub-title -red">
+      <div class="l-inner">
+        <h2 class="c-title -white">WallArt</h2>
+        <ul class="c-breadcrumb p-breadcrumb">
+          <li><a href="/">Top</a></li>
+          <li>WallArt</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="p-sub-wallart">
+      <div class="p-sub-wallart__wrapper">
+        <p class="p-sub-wallart__catch">不思議で奇妙。<br class="u-mobile">
+          美しくて繊細。<br>
+          WebDesignが紡ぐアートは<br class="u-mobile">
+          現代のおとぎ話。</p>
+          <div class="p-sub-wallart-artwork">
+            <div class="p-sub-wallart-artwork__inner l-inner">
+              <h3 class="c-title -white u-text-center -md">Read to <br class="u-mobile">Artwork</h3>
+              <div class="p-sub-wallart-artwork-flow">
+                <div class="p-sub-wallart-artwork-flow-lists">
+                  <div class="p-sub-wallart-artwork-flow-list">
+                    <p class="p-sub-wallart-artwork-flow-list__title">Client</p>
+                    <div class="p-sub-wallart-artwork-flow-list__box">
+                      <p class="first">お客様の<br class="u-desktop">パーソナリティ</p>
+                      <p>由来/縁</p>
+                      <p>それぞれの物語</p>
+                    </div>
+                  </div>
+                  <div class="p-sub-wallart-artwork-flow-list">
+                    <p class="p-sub-wallart-artwork-flow-list__title">WebDesign</p>
+                    <div class="p-sub-wallart-artwork-flow-list__box">
+                      <p>世界の神話</p>
+                      <p>童話</p>
+                      <p>伝わる民話</p>
+                      <p>原初の物語</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-sub-wallart-artwork-flow-contents">
+                  <div class="p-sub-wallart-artwork-flow-content">
+                    <p class="p-sub-wallart-artwork-flow__title">Flow 1 : Spin A Tale</p>
+                    <div class="p-sub-wallart-artwork-flow-content-item">
+                      <div class="p-sub-wallart-artwork-flow-content-item__img js-fade">
+                        <img src='../images/top/top_wallart01.jpg' alt='' width='' height='' loading='lazy'>
+                      </div>
+                      <div class="p-sub-wallart-artwork-flow-content-item__wrap">
+                        <h4>物語を紡ぐ</h4>
+                        <p>お客様のパーソナリティや、物語、企業の創業由来などのオリジナルの物語と、世界の神話や童話、伝わっている民話などを掛け合わせてリンクされた点をキャッチアップ。その地点から物語を紡ぎます。<br><br>
+                          この世界に一つしかない、オリジナルの物語。 もしかしたら神話かもしれないし、不思議なおとぎ話になるかもしれない。<br><br>
+                          あなたの今までの物語は、これからの世界を照らす物語として生まれます。</p>
+                          <div class="p-sub-wallart-artwork-flow-content__icon">
+                            <img src='..//images/wallart/sub-wallart01.png' alt='' width='' height='' loading='lazy'>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-sub-wallart-artwork-flow-content">
+                    <p class="p-sub-wallart-artwork-flow__title">Flow 2 : Extracting Essence</p>
+                    <div class="p-sub-wallart-artwork-flow-content-item">
+                      <div class="p-sub-wallart-artwork-flow-content-item__img js-fade">
+                        <img src='../images/top/top_company03.jpg' alt='' width='' height='' loading='lazy'>
+                      </div>
+                      <div class="p-sub-wallart-artwork-flow-content-item__wrap">
+                        <h4>物語から抽出する</h4>
+                        <p>色々な要素を複雑に絡み合わせ、紡ぎ出したストーリーから、象徴的なシーンを抽出し描きます。ストーリー全体を内包するイメージを練り上げるのです。<br><br>
+                          色々な産地のコーヒー豆を丁寧に挽いて、ドリップするように、風味豊かで濃い物語のシーンを抽出するのです。</p>
+                          <div class="p-sub-wallart-artwork-flow-content__icon">
+                            <img src='..//images/wallart/sub-wallart02.png' alt='' width='' height='' loading='lazy'>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-sub-wallart-artwork-flow-content">
+                    <p class="p-sub-wallart-artwork-flow__title">Flow 3 : Weaving into Art</p>
+                    <div class="p-sub-wallart-artwork-flow-content-item">
+                      <div class="p-sub-wallart-artwork-flow-content-item__img js-fade">
+                        <img src='../images/top/top_artists01.jpg' alt='' width='' height='' loading='lazy'>
+                      </div>
+                      <div class="p-sub-wallart-artwork-flow-content-item__wrap">
+                        <h4>アートへ織り込む</h4>
+                        <p>抽出したイメージ。そのイメージをキャンバスに映します。<br><br>
+                          あなただけのストーリーはどんな色に、どんな形に、どんなアートになるのでしょう。物語が形になる瞬間はとてもエキサイティング。</p>
+                          <div class="p-sub-wallart-artwork-flow-content__icon">
+                            <img src='..//images/wallart/sub-wallart03.png' alt='' width='' height='' loading='lazy'>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-sub-wallart-artwork-flow-content">
+                    <p class="p-sub-wallart-artwork-flow__title">Flow 4 : Art Rises Up</p>
+                    <div class="p-sub-wallart-artwork-flow-content-item">
+                      <div class="p-sub-wallart-artwork-flow-content-item__img js-fade">
+                        <img src='../images/top/top_wallart03.jpg' alt='' width='' height='' loading='lazy'>
+                      </div>
+                      <div class="p-sub-wallart-artwork-flow-content-item__wrap">
+                        <h4>アートが立ち上がる</h4>
+                        <p>1枚のアートが、キャンバスから飛び出して壁に投影されていきます。<br><br>
+                          あなたの物語が決して1つの要素では出来上がらないのと同じように、壁に創られていくアートは、さまざまな職人さんと共に創られ、彩られ、かたちになっていくのです。<br><br>
+                          アートが立ち上がっていく様は、一つの物語を読んでいるかのよう。その創られていく工程もお楽しみください。</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="p-sub-wallart-artwork-flow-under">
+                  <h3 class="p-sub-wallart-artwork-flow-under__title">
+                    To you.<br>Your own story.<br>Your own art.
+                  </h3>
+                  <div class="p-sub-wallart-artwork-flow-under__img js-fade">
+                    <img src='../images/top/top_company05.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="p-sub-wallart-semiorder">
+            <div class="p-sub-wallart-semiorder__wrapper">
+              <div class="p-sub-wallart-semiorder__inner l-inner">
+                <h2 class="c-title u-text-center u-black -md">Semi-<br class="u-mobile">Order<br class="u-mobile">Art</h2>
+                <p class="p-sub-wallart-semiorder__top-text">WebDesignの世界観、Webのアートを手軽に楽しみにたい方はセミオーダーを。</p>
+                <div class="p-sub-wallart-semiorder-item">
+                  <div class="p-sub-wallart-semiorder-item__img js-fade">
+                    <img src='../images/top/top_mv01.jpg' alt='' width='' height='' loading='lazy'>
+                  </div>
+                  <div class="p-sub-wallart-semiorder-item__content">
+                    <h3>サブスクリプション<br>ウォールアート</h3>
+                    <p>WebDesignの世界観を表したアートを、フルオーダーより手軽にご体感頂けるのがサブスクリプション型ウォールアート。<br>
+                      お好きなサイズ、お好きな素材でセミオーダーすることが可能です。お客様をお招きする玄関、オフィスのエントランスや会議室、レストランを彩る1枚のアートをお届けいたします。
+                    </p>
+                  </div>
+                </div>
+                <div class="p-sub-wallart-semiorder-cards">
+                  <div class="p-sub-wallart-semiorder-card js-fade">
+                    <p class="p-sub-wallart-semiorder-card__number">Flow 01</p>
+                    <div class="p-sub-wallart-semiorder-card__img">
+                      <img src='../images/wallart/sub-wallart04.png' alt='' width='' height='' loading='lazy'>
+                    </div>
+                    <p class="p-sub-wallart-semiorder-card__title">アートとサイズを選んで<br>フォームからお申し込み</p>
+                  </div>
+                  <div class="p-sub-wallart-semiorder-card js-fade">
+                    <p class="p-sub-wallart-semiorder-card__number">Flow 02</p>
+                    <div class="p-sub-wallart-semiorder-card__img">
+                      <img src='../images/wallart/sub-wallart05.png' alt='' width='' height='' loading='lazy'>
+                    </div>
+                    <p class="p-sub-wallart-semiorder-card__title">設置場所の現地調査</p>
+                    <p class="p-sub-wallart-semiorder-card__text">壁への取付方法の確認などを行います。<br>
+                      ※アートに伝統工芸を組み込みたい、壁に穴を開けたくない、サイズの選び方がわからない等、何でもご相談ください。
+                    </p>
+                  </div>
+                  <div class="p-sub-wallart-semiorder-card js-fade">
+                    <p class="p-sub-wallart-semiorder-card__number">Flow 03</p>
+                    <div class="p-sub-wallart-semiorder-card__img">
+                      <img src='../images/wallart/sub-wallart06.png' alt='' width='' height='' loading='lazy'>
+                    </div>
+                    <p class="p-sub-wallart-semiorder-card__title">お見積もりのご提示</p>
+                    <p class="p-sub-wallart-semiorder-card__text">※初期費用として取付のお費用がかかります。<br>
+                      ご希望の取付方法にてお見積りいたします。 
+                    </p>
+                  </div>
+                  <div class="p-sub-wallart-semiorder-card js-fade">
+                    <p class="p-sub-wallart-semiorder-card__number">Flow 04</p>
+                    <div class="p-sub-wallart-semiorder-card__img">
+                      <img src='../images/wallart/sub-wallart07.png' alt='' width='' height='' loading='lazy'>
+                    </div>
+                    <p class="p-sub-wallart-semiorder-card__title">設置作業～完了</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </div>
+    </section>
+
+    <section class="p-contact js-fade">
+      <a href="">
+        <div class="p-contact__wrapper">
+          <h2 class="c-title p-contact__title">Contact</h2>
+          <p class="p-contact__text">あなたの軌跡は溢れる物語。<br class="u-mobile">その壁に、あなたの物語を。<br>アートが世界を変えていく。</p>
+        </div>
+      </a>
+    </section>
+
+  </main>
+
+  <footer class="p-footer">
+    <div class="p-footer__inner l-inner">
+      <div class="p-footer__wrap">
+        <div class="p-footer__left">
+          <div class="p-footer__logo">
+            <a href="../index.html">
+              <img src="../images/common/logo.png" alt="">
+            </a>
+          </div>
+          <address class="p-footer__address">
+            〒123-4567<br>
+            東京都〇〇区〇〇-〇〇<br>
+            TEL:052-123-4567
+          </address>
+          <a class="p-footer__policy" href="#">privacy policy</a>
+        </div>
+        <div class="p-footer__right">
+          <nav class="p-footer__nav">
+            <ul class="p-footer__nav-items">
+              <li class="p-footer__nav-item">
+                <a href="../concept/">Concept</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../artists/">Artists</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../wallart/">WallArt</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../showroom/">showroom</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../products/">Products</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../news/">News</a>
+              </li>
+              <li class="p-footer__nav-item">
+                <a href="../contact/">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="p-footer__sns">
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="../images/common/instagram.svg" alt="省略">
+            </a>
+            <a class="p-footer__sns-icon" href="#" target="_blank" rel="noopener">
+              <img src="../images/common/x.svg" alt="省略">
+            </a>
+          </div>
+        </div>
+      </div>
+      <small class="p-footer__copyright">&copy;2024 <span>webDesign</span> Co.,Ltd</small>
+    </div>
+  </footer>
+
+
+</body>
+</html>

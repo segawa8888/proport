@@ -1,0 +1,18 @@
+@use 'foundation' as *;
+
+.c-breadcrumb {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+  }
+
+  .c-breadcrumb li {
+    color:$color-white;
+    font-size:prem(16);
+    font-family: $font-family-accent;
+  }
+  
+  .c-breadcrumb li:not(:last-of-type)::after {
+    content: ">";
+    margin: 0 .6em; /* 記号の左右の余白 */
+  }

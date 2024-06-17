@@ -1,0 +1,13 @@
+@use 'foundation' as *;
+
+.p-sub-wallart__catch {
+    background-color: $color-black;
+    padding-top: prem(50);
+    font-size: prem(24);
+    color: $color-white;
+    text-align: center;
+    line-height: 1.8;
+    @include mq(md) {
+        font-size: prem(48);
+    }
+}

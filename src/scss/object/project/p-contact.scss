@@ -1,0 +1,38 @@
+@use 'foundation' as *;
+
+.p-contact__wrapper {
+    background-image: url('/images/top/top_contact.jpg');
+    background-size: cover;
+    padding:prem(100) 0;
+    position: relative;
+    text-align: center;
+    color: $color-white;
+    &::before {
+        position: absolute;
+        content: '';
+        right: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, .5);
+        height: auto;
+        opacity: 1;
+        transition: opacity .6s ease;
+        width: 100%;
+    }
+}
+
+.p-contact__title {
+    z-index: 1;
+    text-align: center;
+    position: relative;
+}
+
+.p-contact__text {
+    margin-top: prem(40);
+    color: $color-white;
+    font-size: prem(16);
+    z-index: 1;
+    position: relative;
+    line-height: 1.8;
+}

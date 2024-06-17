@@ -1,0 +1,104 @@
+@use 'foundation' as *;
+
+.p-showroom {
+    padding-top: prem(80);
+    @include mq(md) {
+        padding-top: prem(200);
+        margin-top: prem(300);
+    }
+}
+
+.p-showroom-fix-box {
+    position: relative;
+    height: prem(77);
+    overflow: hidden;
+    z-index:-1;
+    @include mq(md) {
+        height: prem(120);
+    }
+}
+
+.p-showroom-flowing-box {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    h3 {
+        color: #DBDBDB;
+        font-size: prem(70);
+        font-weight: $medium;
+        white-space: nowrap;
+        padding:0 prem(30);
+        font-style: italic;
+        font-family: $font-family-accent;
+        @include mq(md) {
+            font-size: prem(150);
+            padding: 0;
+        }
+    }
+}
+
+.p-showroom__img {
+    margin-top: prem(-30);
+    margin-left: prem(-20);
+    margin-right: prem(-20);
+    @include mq(md) {
+        margin-left:calc(50% - 48vw);
+        margin-right: calc(50% - 48vw);
+        margin-top: prem(-20);
+    }
+    img {
+        aspect-ratio: 375/187;
+        object-fit: cover;
+    }
+}
+
+.p-showroom-info__items {
+    margin-top: prem(50);
+    @include mq(md) {
+        display: flex;
+    }
+}
+
+.p-showroom-info__item {
+    border-bottom: solid thin #DBDBDB;
+    padding-bottom: prem(30);
+    margin-bottom: prem(30);
+    @include mq(md) {
+        border-bottom: initial;
+        padding-bottom: initial;
+        margin-bottom: initial;
+        max-width: 45%;
+        width: 100%;
+    }
+}
+
+.p-showroom-info__item:nth-child(n+2) {
+    margin-top: prem(30);
+    @include mq(md) {
+        border-left: solid  thin #DBDBDB;
+        margin-top: initial;
+        padding-left: prem(100);
+    }
+}
+
+.p-showroom-info__caption {
+    font-style: italic;
+    font-family: $font-family-accent;
+    font-size: prem(16);
+    margin-top: prem(10);
+    color:#A8A8A8;
+}
+
+.p-showroom-info__title {
+    font-size: prem(16);
+    margin-top: prem(20);
+}
+
+.p-showroom__title {
+    margin-top: prem(60);
+    font-size: prem(64);
+    text-align: center;
+    font-family: $font-family-accent;
+    font-weight: $regular;
+    font-style:italic;
+}

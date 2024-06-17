@@ -1,0 +1,21 @@
+@use 'foundation' as *;
+
+.p-sub-concept-introduction {
+    background-color: $color-black;
+    padding-top: prem(80);
+    padding-bottom: prem(80);
+    @include mq(md) {
+        padding-bottom: prem(200);
+    }
+}
+
+.p-sub-concept-introduction__img {
+    margin-top: prem(50);
+    @include mq(md) {
+        max-width: prem(1000);
+        padding-left: prem(20);
+        padding-right: prem(20);
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

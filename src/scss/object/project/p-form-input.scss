@@ -1,0 +1,23 @@
+@use 'foundation' as *;
+
+.p-form-input input {
+	padding: prem(15);
+	width: 100%;
+	font-size: prem(16);
+	line-height: 1;
+	border-radius: 0;
+	border: 1px solid #ccc;
+	appearance: none;
+	background-color: transparent;
+	background-image: none;
+    &::placeholder {
+        font-size: prem(16);
+        color: #ccc;
+    }
+}
+
+.p-form-input input:focus {
+	border: 1px solid #ccc;
+	box-shadow: none;
+	outline: none;
+}
